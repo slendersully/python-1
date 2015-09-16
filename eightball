@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import colors as c
+import random
+print("""
+welcome to magic eight ball
+enter your question below
+""")
+
+answers = ['yes',
+'no',
+'maybe',
+'it is ceatain',
+'reply hazy try again',
+'outlook good',
+'don\'t count on it',
+'my reply is no',
+'better not tell you now',
+'very duobtful',
+'
+
+
+while True:
+    question = input('--> ')
+    answer = random.choice(answers)
+    print(answer)
