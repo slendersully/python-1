@@ -15,11 +15,23 @@ answers = ['yes',
 'don\'t count on it',
 'my reply is no',
 'better not tell you now',
-'very duobtful',
-'
+'very doubtful',
+'do not know',
+'figure it out your self']
 
 
 while True:
     question = input('--> ')
-    answer = random.choice(answers)
-    print(answer)
+    if "death" in question or "die" in question:
+        print(c.rc() + "yes" + c.x)
+    elif "love" in question:
+        print(c.y + "maybe" + c.x)
+    elif "hate"in question:    
+        print(c.g + "do not know")
+    elif "outlook bad" in question: 
+        print(c.b + "can't tell you know")
+    elif "great" in question:
+        print(c.r + "to much harsh questions")
+    else:
+        answer = random.choice(answers)
+        print(answer)
