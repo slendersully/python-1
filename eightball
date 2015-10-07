@@ -22,7 +22,9 @@ answers = ['yes',
 def ask(prompt):
     answer = input(prompt).strip().lower()
     return answer
-
+def bye():
+    print(c.rc() + "see you again" + c.x)
+    exit(0)
 
 try:
     while True:
@@ -37,9 +39,13 @@ try:
             print(c.b + "can't tell you know")
         elif "great" in question:
             print(c.r + "to much harsh questions")
+        elif "bye" in question:
+            bye()
         else:
             answer = random.choice(answers)
             print(answer)
 
 except KeyboardInterrupt:
-    exit(0)
+    bye()
+
+
