@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import skilstak.colors as c
+
+def plain():
+    print(c.rc() +"lego")
+
+if __name__ == "__main__": 
+    plain()
